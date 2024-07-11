@@ -1,0 +1,46 @@
+/* styles.css */
+/* styles.css */
+
+body {
+    margin: 0;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Black background for better visibility */
+    overflow: hidden; /* Hide overflow */
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.trail {
+    position: absolute;
+    position: absolute;
+    position: absolute;
+    width: 20px; /* Increased size */
+    height: 20px; /* Increased size */
+    background-color: rgba(255, 0, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none; /* So the trail doesn't block interactions */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 1), 
+                0 0 30px rgba(255, 0, 255, 0.8), 
+                0 0 45px rgba(255, 0, 255, 0.6), 
+                0 0 60px rgba(255, 0, 255, 0.4), 
+                0 0 75px rgba(0, 34, 255, 0.2);
+    animation: fade 1s ease-out forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
