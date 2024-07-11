@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            width: 5.625rem;
+            height: 5.625rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            border-radius: 50%;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: #000000;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        .icon:hover > i {
+            transform: scale(1.2);
+            color: #fff;
+        }
+        .icon::before {
+            background: var(--color);
+            content: "";
+            position: absolute;
+            width: 130%;
+            height: 130%;
+            left: -100%;
+            top: 70%;
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+        .icon:hover::before {
+            left: -10%;
+            top: -10%;
+        }
+        .icon > i {
+            font-size: 2.5rem;
+            transition: 0.5s;
+            color: var(--color);
+        }
+        .icon:nth-child(1) {
+            --color: linear-gradient(to right, #0f7bf6, #009ffc);
+        }
+        .icon:nth-child(2) {
+            --color: linear-gradient(to right, #1DA1F2, #009ffc);
+        }
+        .icon:nth-child(3) {
+            --color: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+        }
+        .icon:nth-child(4) {
+            --color: linear-gradient(90deg, #0077b5, #00a0dc);
+        }
+        .icon:nth-child(5) {
+            --color: linear-gradient(90deg, #333, #666);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+    </div>
+</body>
+</html>

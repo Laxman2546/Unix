@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scrollable {
+    height: 100vh;
+    overflow-y: scroll;
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .item {
+        margin: 10px 0;
+    }
+    
+    img {
+        width: auto;
+        max-width: 100%;
+        filter: brightness(0.5);
+    }
+    
+    img:hover {
+        filter: brightness(1);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 134, 252, 0.216);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(13, 146, 228, 0.788);
+    border-radius: 10px;
+    filter: brightness(0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    filter: brightness(1);
+    background: rgba(17, 77, 130, 0.614);
+}
+

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: gray;
+    display: grid;
+    place-items: center;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+}
+.card{
+    width: 500px;
+    aspect-ratio: 1/0.7;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.card .image-box{
+width: 100%;
+height: 100%;
+border-radius: inherit;
+}
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+.card::after{
+    content: "";
+    position:absolute;
+    inset: 0;
+    border:2px solid white;
+    border: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+.card:hover img{
+    filter: grayscale(1) brightness(0.1);
+}
+.card:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+.content{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h1,
+.content p {
+    opacity: 0;
+    transition: 0.4s,0.2s ease;
+}
+.content h1{
+    margin-bottom: 12px;
+scale: 0.7;
+font-weight: bold;
+color: rgb(255, 255, 255);
+}
+.content p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d1d1d1;
+    transform: translateY(50%);
+}
+.card:hover .content h1{
+    transform: translateY(0);
+    opacity: 1;
+    scale:1;
+}
+.card:hover .content p{
+    transform: translateY(0);
+    opacity: 1;
+}

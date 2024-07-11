@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        body {
+            background-color: #000;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: row;
+        }
+        .img-container {
+            height: 800px;
+            width: 400px;
+            margin: 20px; 
+        }
+        .img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; 
+            box-shadow: 12px 8px 20px red; 
+        }
+        .imgdrop{
+            height: 100%;
+            width: 100%;
+            object-fit: cover; 
+            filter: drop-shadow(12px 8px 20px red);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <img class="img" src="img.png" alt="Image">
+    </div>  
+    <div class="img-container">
+        <img class="imgdrop" src="img.png" alt="Image">
+    </div>
+</body>
+</html>
