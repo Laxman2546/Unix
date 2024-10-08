@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  animation: fadein;
+  animation-duration: 1s;
+}
+
+body {
+  text-align: center;
+  background-color: #6f1d1b;
+}
+.container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+h1 {
+  color: #ffe6a7;
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.game {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.box {
+  color: #9d0208;
+  background-color: #bb9457;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.reset-btn {
+  padding: 15px;
+  position: relative;
+  top: 250px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #ffe6a7;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+.msg-container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 55px;
+}
+.new-btn {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #ffe6a7;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+#msg {
+  color: #ffe6a7;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.hide {
+  display: none;
+}
+.visible {
+  display: none;
+}
+.names{
+  display: none;
+}
+.scoreBoard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+th,
+td {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  place-items: center;
+  width: 150px;
+  height: 100px;
+  border: none;
+  outline: none;
+  background-color: #bb9457;
+  top: -35px;
+}
+.scoreBoard1 {
+  position: relative;
+  top: -150px;
+}
+
+.show {
+  display: none;
+}
+.show1 {
+  display: none;
+}
+.turn {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #d68708;
+  font-weight: 500;
+}
+.pop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+  position: relative;
+}
+.popup {
+  z-index: 1000;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #bb9457;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  padding: 20px;
+  color: white;
+  animation-name: fadeout;
+  animation-duration: 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  gap: 15px;
+}
+.confirm-reset {
+  width: 60px;
+  padding: 13px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  border: 0.5px solid #e59616;
+  color: #e59616;
+  cursor: pointer;
+}
+.cancelreset {
+  width: 80px;
+  padding: 13px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  border: 0.5px solid #e59616;
+  color: #e59616;
+  cursor: pointer;
+  text-align: center;
+}
+.cancelreset:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #e59616;
+  color: white;
+}
+.confirm-reset:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #e59616;
+  color: white;
+}
+.opac {
+  display: none;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="names">
+        <input type="text" placeholder="player1 name" class="player1" />
+        <input type="text" placeholder="player2 name" class="player2" />
+        <button class="submit">start game</button>
+      </div>
+      <div class="pop opac">
+        <div class="popup">
+          <p>
+            Are u sure do you want to reset the game ?these will reset your
+            scores also!
+          </p>
+          <div class="buttons">
+            <button class="confirm-reset">ok</button>
+            <button class="cancelreset">cancel</button>
+          </div>
+        </div>
+      </div>
+      <div class="msg-container hide">
+        <p id="msg">winner</p>
+        <button class="new-btn">Newgame</button>
+      </div>
+      <div class="container visible">
+        <h1>Tictactoe</h1>
+        <div class="turn"></div>
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+        <button class="reset-btn">Reset Game</button>
+      </div>
+      <div id="makeItRain"></div>
+      <table class="scoreBoard show1">
+        <tr>
+          <th>Player X</th>
+          <th>Player O</th>
+          <th>Draws</th>
+        </tr>
+        <tr>
+          <h1 class="scoreBoard1 show">Scoreboard</h1>
+          <td id="scoreX">0</td>
+          <td id="scoreO">0</td>
+          <td id="draws">0</td>
+        </tr>
+      </table>
+    </main>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti/dist/confetti.browser.min.js"></script>
+  </body>
+</html>
